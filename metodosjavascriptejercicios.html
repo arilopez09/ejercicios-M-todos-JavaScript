@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métodos clave en HTML y JavaScript</title>
+</head>
+<body>
+
+   1. innerHTML
+  <h2>1. innerHTML</h2>
+
+  <!-- Ejemplo 1: cambiar texto -->
+  <p id="mensaje">Hola mundo</p>
+  <script>
+    document.getElementById("mensaje").innerHTML = "¡Bienvenido!";
+  </script>
+
+  <!-- Ejemplo 2: agregar una imagen -->
+  <div id="imagen"></div>
+  <script>
+    document.getElementById("imagen").innerHTML = '<img src="ipn-logo-png_seeklogo-IPN.png" alt="Logo" width="150">';
+  </script>
+
+  <hr>
+
+  2. document.getElementById()
+  <h2>2. document.getElementById()</h2>
+
+  <!-- Ejemplo 1: mostrar un mensaje -->
+  <p id="aviso">Mensaje inicial</p>
+  <script>
+    var elemento = document.getElementById("aviso");
+    elemento.textContent = "Hola Estudiantes";
+  </script>
+
+  <!-- Ejemplo 2: cambiar el color de un botón -->
+  <button id="btn">Haz clic</button>
+  <script>
+    document.getElementById("btn").style.backgroundColor = "lightblue";
+  </script>
+
+  <hr>
+
+  3. querySelector() 
+  <h2>3. querySelector()</h2>
+
+  <!-- Ejemplo 1: obtener un elemento por clase -->
+  <p class="destacado">Texto importante</p>
+  <script>
+    document.querySelector(".destacado").style.color = "red";
+  </script>
+
+  <!-- Ejemplo 2: obtener un botón y deshabilitarlo -->
+  <button class="btn">Enviar</button>
+  <script>
+    document.querySelector(".btn").disabled = true;
+  </script>
+
+</body>
+</html>
